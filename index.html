@@ -54,7 +54,7 @@
     /* ── Header ─────────────────────────────────────────── */
     .masthead {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
       gap: 24px;
       padding-bottom: 22px;
@@ -356,6 +356,10 @@
       }
     }
 
+    .contact-section {
+      display: none;
+    }
+
     @media (max-width: 640px) {
       .page {
         padding: 36px 22px 56px;
@@ -363,6 +367,14 @@
 
       .masthead h1 {
         font-size: 30px;
+      }
+
+      .masthead-contact {
+        display: none;
+      }
+
+      .contact-section {
+        display: block;
       }
 
       .skills li {
@@ -386,10 +398,7 @@
         <div class="role">Head of Technology</div>
       </div>
       <div class="masthead-contact">
-        <div class="mc-item"><a href="/cdn-cgi/l/email-protection#36425e53405f585e585176515b575f5a1855595b"><span
-              class="__cf_email__"
-              data-cfemail="16627e73607f787e787156717b777f7a3875797b">[email&#160;protected]</span></a></div>
-        <div class="mc-item">(+84) 971 570 520</div>
+        <div class="mc-item"><a href="mailto:thevinhng@gmail.com">thevinhng@gmail.com</a></div>
         <div class="mc-item"><a href="https://linkedin.com/in/vinhnguyenthe" target="_blank"
             rel="noopener">linkedin.com/in/vinhnguyenthe</a></div>
       </div>
@@ -502,10 +511,33 @@
       </div>
     </section>
 
+
+    <!-- CONTACT -->
+    <section class="section contact-section">
+      <h2 class="section-label">Contact</h2>
+      <div class="card">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:thevinhng@gmail.com">thevinhng@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <span class="label">Phone</span>
+            <span class="value" style="color: var(--ink-soft); font-style: italic;">Available upon request</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">LinkedIn</span>
+            <span class="value"><a href="https://linkedin.com/in/vinhnguyenthe" target="_blank"
+                rel="noopener">linkedin.com/in/vinhnguyenthe</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
 </body>
 
 </html>
