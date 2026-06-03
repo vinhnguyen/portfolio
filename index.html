@@ -339,21 +339,76 @@
 
     /* ── Print ──────────────────────────────────────────── */
     @media print {
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
       body {
         background: white;
+        font-size: 13px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .page {
-        padding: 36px 40px;
+        padding: 28px 38px;
         max-width: none;
       }
 
+      .masthead {
+        padding-bottom: 14px;
+        margin-bottom: 18px;
+      }
+
+      .masthead h1 {
+        font-size: 32px;
+      }
+
+      .section {
+        margin-bottom: 16px;
+      }
+
+      .section-label {
+        margin-bottom: 8px;
+      }
+
       .card {
+        padding: 14px 20px;
         break-inside: avoid;
       }
 
+      .summary p {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
       .job {
+        padding-bottom: 10px;
         break-inside: avoid;
+      }
+
+      .job-blurb {
+        margin-bottom: 5px;
+      }
+
+      .job ul {
+        margin-top: 4px;
+      }
+
+      .job li {
+        margin-bottom: 2px;
+        font-size: 12.5px;
+        line-height: 1.4;
+      }
+
+      .skills ul {
+        gap: 7px;
+      }
+
+      .skills li {
+        font-size: 12.5px;
+        line-height: 1.4;
       }
     }
 
@@ -484,18 +539,17 @@
           <li>
             <span class="k">Technical Leadership</span>
             <span class="v">Led engineering teams of 40–250 under a single technical vision — raising the
-              bar on quality and delivery velocity, and translating business goals into outcomes the whole
-              organization rallies behind</span>
+              bar on quality and delivery velocity, and translating business goals into outcomes.</span>
           </li>
           <li>
             <span class="k">Platform Architecture</span>
             <span class="v">Scalable distributed systems, event-driven microservices, cloud-native infrastructure (GCP,
-              AWS, Kubernetes), architected for compliance and data residency</span>
+              AWS, Kubernetes), architected for compliance and data residency.</span>
           </li>
           <li>
             <span class="k">AI Engineering</span>
-            <span class="v">Org-wide AI developer tooling (Claude, Cursor, Copilot), production GenAI &amp; LLM
-              integration, AI agent workflow automation</span>
+            <span class="v">Org-wide AI developer tooling (Claude, Cursor, Codex), production GenAI &amp; LLM
+              integration, AI agent workflow automation.</span>
           </li>
         </ul>
       </div>
